@@ -1,0 +1,18 @@
+TARDIS is a platform that is being used by multiple application teams to design & execute their models.
+
+Currently I am working mainly on 2 parts as below:
+	Docker: TARDIS uses Docker Containers at 2 level:
+-	First there is a base image that contains the basic applications and packages being used, OS is RHEL7.
+-	Secondly on every deployment a new image is created based on the code changes.
+I have updated the base image to add new packages using rpm.
+Apart from this I have been trying to modify the images to reduce their size, without removing any essential feature, also trying to reduce overall build time of these images.
+
+	Cassandra: Cassandra is one of the databases that is being used in TARDIS.
+TARDIS uses Datastax Enterprise which is a cloud database-as-a-service based on Cassandra.
+Currently I am working on installation and setup of DSE (including Cassandra) on our AWS-Nodes.
+Apart from installation I am also working on migration of DSE from lower versions to latest versions on already installed AWS-nodes.
+
+Apart from above 2, I have also worked on couple of minor enhancements of Tardis as below: 
+-	Creation and modification of workflows
+-	Adding and modifying SLA’s to tasks
+
